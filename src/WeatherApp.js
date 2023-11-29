@@ -99,17 +99,6 @@ export default function WeatherApp() {
         <div className="weather-forecast"></div>
       </div>
       <br />
-      <p>
-        <a
-          href="https://github.com/m-damas/weather-design"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {" "}
-          <b>Open-source code</b>{" "}
-        </a>
-        by Melissa Damas
-      </p>
     </div>
   );
 }
