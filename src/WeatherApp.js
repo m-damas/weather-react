@@ -10,19 +10,11 @@ export default function WeatherApp() {
   const [descritpion, setDescription] = useState("");
   const [humidity, setHumidity] = useState("");
   const [wind, setWind] = useState("");
-  const [temp, setTemp] = useState("");
-  const [image, setimage] = useState("");
 
   function showWeather(response) {
-    setTemp(<div>Temperature: {Math.round(response.data.main.temp)}°C </div>);
-    setDescription(
-      <div>Description: {response.data.weather[0].description}</div>
-    );
-    setHumidity(<div>Humidity: {response.data.main.humidity}% </div>);
-    setWind(<div>Wind: {Math.round(response.data.wind.speed)} km/h </div>);
-    setimage(
-      `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-    );
+    setDescription(<span>{response.data.weather[0].description}</span>);
+    setHumidity(<span> {response.data.main.humidity}% </span>);
+    setWind(<span>{Math.round(response.data.wind.speed)} km/h </span>);
   }
 
   function handleSubmit(event) {
@@ -92,9 +84,9 @@ export default function WeatherApp() {
         </div>
         <div className="col-6">
           <ul clasName="list">
-            <li className="description">Description: Sunny</li>
-            <li>Humidity: 60%</li>
-            <li>Wind: 10%</li>
+            <li className="description">Description: {descritpion}</li>
+            <li>Humidity: {humidity}</li>
+            <li>Wind: {wind}</li>
           </ul>
         </div>
         <div className="wrapper d-flex">

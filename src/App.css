@@ -37,11 +37,13 @@ img.weather-icon {
   top: 295px;
   left: 725px;
 }
+ul {
+  list-style: none;
+}
 ul.list {
   position: relative;
   left: 150px;
   bottom: 70px;
-  list-style: none;
 }
 .icon {
   text-align: center;
