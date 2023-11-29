@@ -32,15 +32,77 @@ export default function Weather() {
 
   return (
     <div className="WeatherApp">
-      <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Type a city" onChange={updateCity} />
-        <input type="submit" value="Search" />
-        <span>
-          <input type="submit" value="Current" />
-        </span>
-      </form>
-      <h2>{message}</h2>
-      <img src={image} alt="" />
+      <div className="weather-app-wrapper">
+        <nav className="navbar">
+          <div className="container-fluid">
+            <form onSubmit={handleSubmit} className="d-flex">
+              <input
+                className="form-control me-4"
+                type="search"
+                placeholder="Type a city"
+                onChange={updateCity}
+              />
+              <button
+                className="btn btn-outline-success me-3"
+                type="submit"
+                value="Search"
+              >
+                Search
+              </button>
+
+              <button
+                className="btn btn-outline-primary"
+                type="submit"
+                value="Current"
+              >
+                Current
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <div>
+          <br />
+
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="content">
+                  <h1 className="cityName">Atlanta GA, USA</h1>
+                  <h3>Last updated:</h3>
+                  <h2>
+                    <span className="temperature">78</span>
+                    <span className="units">
+                      <a href="/" className="active">
+                        °C
+                      </a>{" "}
+                      |<a href="#">°F</a>
+                    </span>
+                  </h2>
+                  <h4>{message}</h4>
+                  <img src={image} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="col d-none d-md-block">
+              <img
+                src="public/.Atlanta.jpeg"
+                className="img-fluid atlanta-image"
+                alt="atlanta-image"
+              />
+            </div>
+            //
+          </div>
+        </div>
+      </div>
+      <br />
+      <p>
+        <a href="https://github.com/m-damas/weather-design">
+          {" "}
+          <b>Open-source code</b>{" "}
+        </a>
+        by Melissa Damas
+      </p>
     </div>
   );
 }
