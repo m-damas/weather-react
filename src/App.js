@@ -14,7 +14,7 @@ function App() {
             rel="noreferrer"
           >
             {" "}
-            <b>Open-source code</b>{" "}
+            <b>Open-sourced code</b>{" "}
           </a>
           by Melissa Damas
         </p>

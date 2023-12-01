@@ -3,7 +3,6 @@ body {
   min-height: 100vh;
 }
 .App {
-  margin: 20px;
   max-width: 1100px;
   margin: 30px auto;
 }
@@ -25,32 +24,34 @@ h2.flo {
 img.atlanta-image {
   border-radius: 14px;
 }
-
 img.weather-icon {
-  display: block;
-  max-width: 70px;
+  max-width: 100px;
+}
+.icon {
+  text-align: center;
+  font-size: 30px;
 }
 ul {
   list-style: none;
+  font-size: 20px;
 }
 ul.list {
   position: relative;
   left: 150px;
   bottom: 70px;
 }
-.icon {
-  text-align: center;
-  font-size: 30px;
-}
 .card-text {
   text-align: center;
 }
-.temperature {
-  font-size: 50px;
+span.temperature {
+  font-size: 45px;
 }
-.units {
+span.units {
   position: relative;
   bottom: 22px;
+}
+span.units a {
+  text-decoration: none;
 }
 .units .active {
   color: black;
@@ -59,6 +60,7 @@ ul.list {
 .units .active:hoover {
   text-decoration: none;
 }
+
 button:hover {
   opacity: 0.9;
   cursor: pointer;

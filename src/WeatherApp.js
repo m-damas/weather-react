@@ -38,6 +38,7 @@ export default function WeatherApp() {
                 className="form-control me-4"
                 type="search"
                 placeholder="Type a city"
+                autoFocus="on"
                 onChange={updateCity}
               />
               <button
@@ -65,7 +66,7 @@ export default function WeatherApp() {
             <h3>Last updated:</h3>
 
             <h2 className="flo">
-              <span class="temperature">78</span>
+              <span className="temperature">78</span>
               <span className="units">
                 <a href="/" className="active" rel="noreferrer">
                   °C
