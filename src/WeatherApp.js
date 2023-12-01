@@ -7,9 +7,6 @@ import "./Weather.css";
 
 export default function WeatherApp(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
-  const [city, setCity] = useState("");
-
-  const [temperature, setTemperature] = useState(null);
 
   function showWeather(response) {
     setWeatherData({
