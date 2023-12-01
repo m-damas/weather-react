@@ -24,13 +24,13 @@ h2.flo {
 img.atlanta-image {
   border-radius: 14px;
 }
-img.weather-icon {
-  max-width: 100px;
+.WeatherIcon canvas {
+  height: 64px;
+  width: 64px;
+  margin-left: 10px;
+  display: inline-block;
 }
-.icon {
-  text-align: center;
-  font-size: 30px;
-}
+
 ul {
   list-style: none;
   font-size: 20px;
