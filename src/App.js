@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <WeatherApp />
+        <WeatherApp defaultCity="New York" />
         <p>
           <a
             href="https://github.com/m-damas/weather-design"
