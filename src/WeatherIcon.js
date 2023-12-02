@@ -24,8 +24,8 @@ export default function WeatherIcon(props) {
   };
 
   return (
-    <div className="Icon">
-      <ReactSkycon icon={codeMapping[props.code]} size={50} />
+    <div className="WeatherIcon-icon">
+      <ReactSkycon icon={codeMapping[props.code]} size={props.size} />
     </div>
   );
 }
