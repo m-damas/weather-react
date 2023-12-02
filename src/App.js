@@ -12,7 +12,7 @@ function App() {
           <a
             href="https://github.com/m-damas/weather-design"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             {" "}
             <b>open-sourced on GitHub</b>{" "}

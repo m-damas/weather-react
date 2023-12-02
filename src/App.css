@@ -25,10 +25,12 @@ img.atlanta-image {
   border-radius: 14px;
 }
 .WeatherIcon canvas {
-  height: 64px;
-  width: 64px;
-  margin-left: 10px;
+  margin-left: 20px;
   display: inline-block;
+}
+div .Icon {
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 ul {
