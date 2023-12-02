@@ -13,14 +13,14 @@ export default function WeatherIcon(props) {
     "04n": "CLOUDY",
     "09d": "SHOWERS_DAY",
     "09n": "SHOWERS_NIGHT",
-    "010d": "RAIN",
-    "010n": "RAIN",
-    "011d": "THUNDER_SHOWERS_DAY",
-    "011n": "THUNDER_SHOWERS_NIGHT",
-    "013d": "SNOW_SHOWERS_DAY",
-    "013n": "SNOW_SHOWERS_NIGHT",
-    "050d": "FOG",
-    "050n": "FOG",
+    "10d": "RAIN",
+    "10n": "RAIN",
+    "11d": "THUNDER_SHOWERS_DAY",
+    "11n": "THUNDER_SHOWERS_NIGHT",
+    "13d": "SNOW_SHOWERS_DAY",
+    "13n": "SNOW_SHOWERS_NIGHT",
+    "50d": "FOG",
+    "50n": "FOG",
   };
 
   return (
