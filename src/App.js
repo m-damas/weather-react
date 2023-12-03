@@ -17,6 +17,15 @@ function App() {
           >
             {" "}
             <b>open-sourced on GitHub</b>{" "}
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://resonant-palmier-715d3f.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-decoration-none"
+          >
+            <b>hosted on Netlify</b>
           </a>
         </p>
       </div>
