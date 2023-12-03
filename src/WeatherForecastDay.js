@@ -11,7 +11,7 @@ export default function WeatherForecastDay(props) {
     return `${temperature}`;
   }
   function day() {
-    let date = new Date(props.date.time * 1000);
+    let date = new Date(props.data.time * 1000);
     let day = date.getDay();
 
     let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -22,7 +22,7 @@ export default function WeatherForecastDay(props) {
   return (
     <div>
       <div className="WeatherForecast-day">{day()}</div>
-      <WeatherIcon code={props.data.weather.icon} size={36} />
+      <WeatherIcon code={props.data.condition.icon} size={36} />
       <div className="WeatherForecast-temp">
         <span className="WeatherForecast-max">{maxTemperature()}°</span>
         <span className="WeatherForecast-min">{minTemperature()}°</span>
